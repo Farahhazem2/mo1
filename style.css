@@ -1,0 +1,104 @@
+.navbar {
+    background-color: rgb(12, 12, 12) !important;
+}
+
+/* تغيير لون النص داخل الـ navbar إلى اللون الأسود */
+.navbar .navbar-nav .nav-link {
+    color: rgb(0, 0, 0) !important; 
+    /* يمكن تغيير اللون هنا */
+}
+
+/* تغيير لون النص عند التمرير فوقه */
+.navbar .navbar-nav .nav-link:hover {
+    color: #ae4e25 !important; /* الأخضر عند التمرير */
+}
+
+/* تخصيص اللون خلف كلمة Home */
+.navbar-brand {
+    color: rgb(255, 245, 245) !important; /* تغيير لون النص في كلمة "Home" */
+}
+
+.navbar-brand:hover {
+    color: #ae4e25 !important; /* الأخضر عند التمرير */
+}
+
+/* إذا كنت تريد أن يكون النص أبيض في حالة خلفية داكنة */
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(5, 5, 5) !important; /* تغيير النص إلى الأبيض هنا */
+}
+/*************************************************************** sectiontwo**************************************************/
+img{
+    height: 100vh;  
+}
+h2{
+    color: #ae4e25;
+   text-align: center;
+    padding-top: 20px;
+}
+
+p{
+    font-size: 25px;
+}
+.accordion-button {
+    background-color: #64431e; /* اللون الأخضر */
+    color: white; /* النص باللون الأبيض */
+    border: none; /* إزالة الحدود */
+    text-align: center;
+    
+}
+
+.accordion-button:hover {
+    background-color: #d38b42b2; /* لون عند التمرير */
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #fffcf3; /* لون عند الفتح */
+    color: rgb(9, 9, 9); /* النص باللون الأبيض */
+}
+
+
+.accordion-button::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+    transform: rotate(0deg); /* افتراضي */
+}
+
+.accordion-button:not(.collapsed)::after {
+    transform: rotate(180deg); /* السهم عند الفتح */
+}
+/* .card-title{
+    border: #633003 solid;
+    
+    border-radius: 30px;
+} */
+ .card-title{
+    text-align: center;
+ }
+.card{
+    transition: .2s ease;
+    border: #633003 solid;
+    
+    border-radius: 30px;
+}
+h5{
+    text-align: center;
+    color: #fffcf3;
+}
+footer{
+    height: 20vh;
+}
+.offcanvas-title{
+    color: black;
+    font-size: 30px
+}
+.nav-link active{
+    font-size: 30px;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+.btn-warning {
+    color: #ffffff;
+    background-color: #af4e25;
+    border-color: #af4e25;
+}
